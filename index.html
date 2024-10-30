@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kunal's Portfolio</title>
+
+    <!-- Meta Description for SEO -->
+    <meta name="description"
+        content="Explore Kunal's portfolio, showcasing projects, skills in software development, Python, and machine learning. Connect with Kunal for collaboration." />
+
+    <!-- Keywords for SEO -->
+    <meta name="keywords"
+        content="Kunal Bandale, software developer, Python, machine learning, web development, portfolio, projects, technology, developer, programming, coding" />
+
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Kunal's Portfolio" />
+    <meta property="og:description"
+        content="Explore Kunal's portfolio, showcasing projects, skills in software development, Python, and machine learning. Connect with Kunal for collaboration." />
+    <meta property="og:image" content="images/favicon.cc" />
+    <meta property="og:url" content="http://kunalbandale.me/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+    <!-- External Libraries -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .blinking-cursor {
+            display: inline-block;
+            width: 1ch;
+            animation: blink 1s step-start infinite;
+            color: #747fe0;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-blue-50 flex flex-col items-center">
+    <!-- navigation section -->
+    <nav class="bg-transparent backdrop-blur-md w-full">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-center">
+                <div class="flex space-x-4">
+                    <a href="#project"
+                        class="rounded-md px-3 py-2 text-xl font-medium text-gray-600 hover:bg-blue-200 hover:text-gray-900">Projects</a>
+                    <a href="#contact"
+                        class="rounded-md px-3 py-2 text-xl font-medium text-gray-600 hover:bg-blue-200 hover:text-gray-900">Contact</a>
+                    <a href="#"
+                        class="rounded-md px-3 py-2 text-xl font-medium text-gray-600 hover:bg-blue-200 hover:text-gray-900">Blog</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- hero section with heading and description -->
+
+    <div class="relative isolate px-6 pt-12 lg:px-8 text-center w-full">
+        <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:py-32">
+            <h1 class="text-5xl font-semibold tracking-tight text-[#4f46e5] sm:text-7xl text-left" id="name-title"></h1>
+            <p class="mt-3 text-lg text-black-300 sm:text-l text-left">
+                I'm a
+                <span class="text-indigo-600">Machine Learning </span> enthusiast and
+                innovative <span class="text-indigo-600">web developer </span>,
+                passionate about research and creating impactful projects that drive
+                meaningful change.
+            </p>
+
+            <div class="mt-5 flex justify-left">
+                <a href="#"
+                    class="flex items-center rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500">
+                    <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M14.25 2.25H6a1.5 1.5 0 0 0-1.5 1.5v16.5a1.5 1.5 0 0 0 1.5 1.5h12a1.5 1.5 0 0 0 1.5-1.5V7.5l-5.25-5.25ZM14.25 2.25v5.25H19.5M12 11.25v6M9 14.25l3 3 3-3" />
+                    </svg>
+                    Resume
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive Console Display -->
+    <div class="flex items-center justify-center w-full py-10">
+        <div class="console bg-gray-100 text-gray-800 p-8 rounded-lg max-w-4xl w-full font-mono shadow-lg">
+            <!-- Changed max-w-lg to max-w-4xl and p-6 to p-8 -->
+            <div class="console-header flex justify-between items-center mb-4">
+                <div class="flex space-x-2">
+                    <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-400"></div>
+                </div>
+                <p class="text-sm text-gray-500">bash</p>
+            </div>
+            <div class="console-body">
+                <p class="text-blue-500">> kunal.currentLocation</p>
+                <p class="text-gray-800">"Maharashtra, India"</p>
+                <p class="text-blue-500 mt-4">> kunal.contactInfo</p>
+                <a href="mailto:bandalekunal@gmail.com"
+                    class="hover:text-violet-600 transition-colors duration-200">["bandalekunal@gmail.com"]</a>
+                <p class="text-blue-500 mt-4">> kunal.resume</p>
+                <a href="kunal.pdf" class="hover:text-violet-600 transition-colors duration-200">["kunal.pdf"]</a>
+                <p class="text-blue-500 mt-4">> kunal.interests</p>
+                <p class="text-gray-800">["reading", "blog-writing"]</p>
+                <p class="text-blue-500 mt-4">> kunal.education</p>
+                <p class="text-gray-800">
+                    ["<span class="text-violet-600">B.tech</span> (Information
+                    Techonology) - Shri Guru Gobind Singhji Institute of Engineering and
+                    Technology, Nanded , Maharashtra"],
+                </p>
+                <p class="text-gray-800">
+                    ["<span class="text-violet-600">Diploma</span> (Computer
+                    Engineering) - Gramin Techincal and Management Campus,
+                    Nanded,Maharashtra"]
+                </p>
+                <!-- <p class="text-blue-500 mt-4">> kunal.skills</p>
+              <p class="text-gray-800">["Sass", "JavaScript", "Python", "React", "Redux", "Flask", "webpack", "git"]</p> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="project" class="text-center">
+        <h2 class="text-3xl font-semibold text-gray-700">Projects</h2>
+        <div class="mt-2 mx-auto w-8 h-1 bg-indigo-500"></div>
+    </div>
+
+    <!-- project - 1 -->
+    <div class="grid gap-16 py-16">
+        <div class="flex items-center justify-center">
+            <div class="bg-white rounded-lg shadow-md p-8 max-w-3xl w-full">
+                <!-- Changed from max-w-md to max-w-3xl -->
+                <h2 class="text-xl font-semibold text-gray-800">
+                    Chart the Stock Market
+                </h2>
+                <p class="mt-3 text-gray-600">
+                    Interactive stock market visualization tool using HighCharts and the
+                    Tradier API. Features real-time data updates and search autocomplete
+                    functionality.
+                </p>
+                <div class="flex flex-wrap gap-2 mt-4">
+                    <span class="bg-green-100 text-green-700 text-sm font-medium py-1 px-3 rounded-full">HTML5</span>
+                    <span class="bg-green-100 text-green-700 text-sm font-medium py-1 px-3 rounded-full">CSS3</span>
+                    <span class="bg-green-100 text-green-700 text-sm font-medium py-1 px-3 rounded-full">ReactJS</span>
+                </div>
+                <div class="flex space-x-4 mt-6">
+                    <a href="#"
+                        class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow hover:bg-blue-700 inline-flex items-center">
+                        Live Demo
+                        <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M12.293 3.293a1 1 0 011.414 0L17 6.586a1 1 0 010 1.414l-4.293 4.293a1 1 0 01-1.414-1.414L14.586 8H4a1 1 0 110-2h10.586l-2.293-2.293a1 1 0 010-1.414z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="bg-gray-100 text-gray-700 font-semibold py-2 px-4 rounded-lg shadow hover:bg-gray-200 inline-flex items-center">
+                        View Source
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- project - 2 -->
+    <div class="grid gap-16 py-1">
+        <div class="flex items-center justify-center">
+            <div class="bg-white rounded-lg shadow-md p-8 max-w-3xl w-full">
+                <!-- Changed from max-w-md to max-w-3xl -->
+                <h2 class="text-xl font-semibold text-gray-800">
+                    Chart the Stock Market
+                </h2>
+                <p class="mt-3 text-gray-600">
+                    Interactive stock market visualization tool using HighCharts and the
+                    Tradier API. Features real-time data updates and search autocomplete
+                    functionality.
+                </p>
+                <div class="flex flex-wrap gap-2 mt-4">
+                    <span class="bg-green-100 text-green-700 text-sm font-medium py-1 px-3 rounded-full">HTML5</span>
+                    <span class="bg-green-100 text-green-700 text-sm font-medium py-1 px-3 rounded-full">CSS3</span>
+                    <span class="bg-green-100 text-green-700 text-sm font-medium py-1 px-3 rounded-full">ReactJS</span>
+                </div>
+                <div class="flex space-x-4 mt-6">
+                    <a href="#"
+                        class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow hover:bg-blue-700 inline-flex items-center">
+                        Live Demo
+                        <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M12.293 3.293a1 1 0 011.414 0L17 6.586a1 1 0 010 1.414l-4.293 4.293a1 1 0 01-1.414-1.414L14.586 8H4a1 1 0 110-2h10.586l-2.293-2.293a1 1 0 010-1.414z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="bg-gray-100 text-gray-700 font-semibold py-2 px-4 rounded-lg shadow hover:bg-gray-200 inline-flex items-center">
+                        View Source
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- project - 3 -->
+    <div class="grid gap-16 py-16">
+        <div class="flex items-center justify-center">
+            <div class="bg-white rounded-lg shadow-md p-8 max-w-3xl w-full">
+                <!-- Changed from max-w-md to max-w-3xl -->
+                <h2 class="text-xl font-semibold text-gray-800">
+                    Chart the Stock Market
+                </h2>
+                <p class="mt-3 text-gray-600">
+                    Interactive stock market visualization tool using HighCharts and the
+                    Tradier API. Features real-time data updates and search autocomplete
+                    functionality.
+                </p>
+                <div class="flex flex-wrap gap-2 mt-4">
+                    <span class="bg-green-100 text-green-700 text-sm font-medium py-1 px-3 rounded-full">HTML5</span>
+                    <span class="bg-green-100 text-green-700 text-sm font-medium py-1 px-3 rounded-full">CSS3</span>
+                    <span class="bg-green-100 text-green-700 text-sm font-medium py-1 px-3 rounded-full">ReactJS</span>
+                </div>
+                <div class="flex space-x-4 mt-6">
+                    <a href="#"
+                        class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow hover:bg-blue-700 inline-flex items-center">
+                        Live Demo
+                        <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M12.293 3.293a1 1 0 011.414 0L17 6.586a1 1 0 010 1.414l-4.293 4.293a1 1 0 01-1.414-1.414L14.586 8H4a1 1 0 110-2h10.586l-2.293-2.293a1 1 0 010-1.414z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="bg-gray-100 text-gray-700 font-semibold py-2 px-4 rounded-lg shadow hover:bg-gray-200 inline-flex items-center">
+                        View Source
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="text-center w-full max-w-lg mx-auto pb-16">
+        <h2 class="text-3xl font-semibold text-gray-700">Contact Me</h2>
+        <div class="mt-2 mx-auto w-8 h-1 bg-indigo-500 mb-8"></div>
+
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+            <form id="contact-form">
+                <div class="mb-4">
+                    <label for="name" class="text-left block text-black">Name</label>
+                    <input type="text" id="name" name="user_name" required
+                        class="mt-1 block w-full h-12 p-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-sky-600" />
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="text-left block text-black">Email</label>
+                    <input type="email" id="email" name="user_email" required
+                        class="mt-1 block w-full h-12 p-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-sky-600" />
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="text-left block text-black">Message</label>
+                    <textarea id="message" name="message" required
+                        class="mt-1 block w-full h-32 p-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-sky-600"></textarea>
+                </div>
+                <button type="submit"
+                    class="w-full bg-sky-600 text-white p-3 rounded hover:bg-sky-700 transition duration-200">
+                    Send
+                </button>
+            </form>
+
+            <!-- Feedback Messages -->
+            <div id="loading" class="hidden text-blue-500 mt-4">Sending...</div>
+            <div id="success" class="hidden text-green-500 mt-4">
+                Your message was sent successfully!
+            </div>
+            <div id="error" class="hidden text-red-500 mt-4">
+                There was an error sending your message. Please try again.
+            </div>
+        </div>
+    </div>
+    <!-- footer section  -->
+    <footer class="p-4 w-full text-center">
+        <div class="flex flex-col items-center justify-center space-y-2">
+            <span class="text-gray-600 text-sm">© 2024 kunalbandale</span>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-600 hover:text-gray-900 text-sm">bandalekunal@gmail.com</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900 text-sm">LinkedIn</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900 text-sm">Github</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- scripts -->
+    <script>
+        // Typing effect for name
+        const text = "> Kunal Bandale";
+        const nameTitle = document.getElementById("name-title");
+        let index = 0;
+
+        function typeLetter() {
+            if (index < text.length) {
+                nameTitle.innerHTML += text[index++];
+                setTimeout(typeLetter, 150);
+            } else {
+                nameTitle.innerHTML += '<span class="blinking-cursor">|</span>';
+            }
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute("href").substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: "smooth",
+                    });
+                }
+            });
+        });
+
+        // Initialize typing effect
+        typeLetter();
+    </script>
+
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        function _0x1bb6(_0x3de621, _0x58c4ee) { const _0x250d58 = _0x250d(); return _0x1bb6 = function (_0x1bb63a, _0x532788) { _0x1bb63a = _0x1bb63a - 0x66; let _0xdaf8f4 = _0x250d58[_0x1bb63a]; return _0xdaf8f4; }, _0x1bb6(_0x3de621, _0x58c4ee); } function _0x250d() { const _0x216cd4 = ['10HCIGvD', '40ENEPFs', 'catch', '869097hmeNcy', '251164ogDWJr', 'init', 'preventDefault', 'loading', 'submit', '891359xRNYSS', 'EmailJS\x20error:', 'classList', 'remove', 'getElementById', 'sendForm', '12330630EWIqMj', 'contact-form', '1441458yxrWJG', 'hidden', 'error', '466482IuROOu', 'addEventListener', 'add', 'success', 'reset', '3193872YNvhAr']; _0x250d = function () { return _0x216cd4; }; return _0x250d(); } (function (_0x45202d, _0x53efe4) { const _0x3a8fc2 = _0x1bb6, _0x27132f = _0x45202d(); while (!![]) { try { const _0x39dd30 = -parseInt(_0x3a8fc2(0x6c)) / 0x1 + parseInt(_0x3a8fc2(0x79)) / 0x2 + -parseInt(_0x3a8fc2(0x6b)) / 0x3 + parseInt(_0x3a8fc2(0x67)) / 0x4 + -parseInt(_0x3a8fc2(0x68)) / 0x5 * (-parseInt(_0x3a8fc2(0x7c)) / 0x6) + parseInt(_0x3a8fc2(0x71)) / 0x7 * (parseInt(_0x3a8fc2(0x69)) / 0x8) + -parseInt(_0x3a8fc2(0x77)) / 0x9; if (_0x39dd30 === _0x53efe4) break; else _0x27132f['push'](_0x27132f['shift']()); } catch (_0xa153e4) { _0x27132f['push'](_0x27132f['shift']()); } } }(_0x250d, 0x61c3b), (function () { const _0x5aacdd = _0x1bb6; emailjs[_0x5aacdd(0x6d)]('FToyxl52iaysEDpF6'); const _0x1ba786 = document[_0x5aacdd(0x75)](_0x5aacdd(0x78)), _0xdf321b = document['getElementById'](_0x5aacdd(0x6f)), _0x30dd40 = document[_0x5aacdd(0x75)](_0x5aacdd(0x7f)), _0x1cc1e0 = document[_0x5aacdd(0x75)](_0x5aacdd(0x7b)); _0x1ba786[_0x5aacdd(0x7d)](_0x5aacdd(0x70), function (_0xca4170) { const _0x25518c = _0x5aacdd; _0xca4170[_0x25518c(0x6e)](), _0xdf321b[_0x25518c(0x73)][_0x25518c(0x74)](_0x25518c(0x7a)), _0x30dd40[_0x25518c(0x73)]['add']('hidden'), _0x1cc1e0[_0x25518c(0x73)]['add']('hidden'), emailjs[_0x25518c(0x76)]('service_tlvsotf', 'template_o43u8yc', _0x1ba786)['then'](() => { const _0x36d7c5 = _0x25518c; _0xdf321b[_0x36d7c5(0x73)][_0x36d7c5(0x7e)](_0x36d7c5(0x7a)), _0x30dd40['classList']['remove'](_0x36d7c5(0x7a)), _0x1ba786[_0x36d7c5(0x66)](), setTimeout(() => { const _0x31d119 = _0x36d7c5; _0x30dd40[_0x31d119(0x73)]['add'](_0x31d119(0x7a)); }, 0x1388); })[_0x25518c(0x6a)](_0x18463c => { const _0x3167ad = _0x25518c; _0xdf321b[_0x3167ad(0x73)][_0x3167ad(0x7e)](_0x3167ad(0x7a)), _0x1cc1e0[_0x3167ad(0x73)]['remove'](_0x3167ad(0x7a)), console[_0x3167ad(0x7b)](_0x3167ad(0x72), _0x18463c), setTimeout(() => { const _0x145059 = _0x3167ad; _0x1cc1e0[_0x145059(0x73)][_0x145059(0x7e)](_0x145059(0x7a)); }, 0x1388); }); }); }()));
+    </script>
+</body>
+
+</html>
